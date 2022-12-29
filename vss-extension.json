@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "adotaskname",
+    "name": "ADO TaskName",
+    "version": "1.0.0",
+    "publisher": "pattontech",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "A task that generates a password for the pipeline",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "adotaskname/icon.png"
+    },
+    "files": [
+        {
+            "path": "adotaskname"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "adotaskname",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "adotaskname"
+            }
+        }
+    ]
+}

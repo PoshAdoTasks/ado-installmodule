@@ -21,8 +21,14 @@ Task SetupTask -depends SetupTfx {
  tfx build tasks create --task-name $script:TaskName --friendly-name $script:TaskName --description $script:Description --author $script:Author
 }
 
-Task AddVstsTaskSdk -depends SetupTask {
- Save-Module –Name VstsTaskSdk –Path ".\$($script:TaskName)\ps_modules" –Force
+Task AddVstsTaskSdk -depends SetupTfx {
+ Save-Module –Name VstsTaskSdk –Path ".\$($script:TaskName)\ps_modules" –Force;
+ Set-Location ".\$($script:TaskName)\ps_modules\VstsTaskSdk";
+ $VstsTaskSdkDirectory = (Get-Item .).FullName;
+ $VersionDirectory = (Get-Item .).GetDirectories().FullName;
+ Write-Output $VstsTaskSdkDirectory
+ Write-Output $VersionDirectory
+ Move-Item $VersionDirectory $VstsTaskSdkDirectory -Verbose
 }
 
 Task CreatePackage -depends Clean {

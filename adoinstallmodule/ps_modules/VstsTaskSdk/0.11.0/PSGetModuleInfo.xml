@@ -188,15 +188,15 @@
           <S N="requireLicenseAcceptance">False</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">197233</S>
-          <S N="downloadCount">408216</S>
+          <S N="versionDownloadCount">197238</S>
+          <S N="downloadCount">408221</S>
           <S N="packageSize">71074</S>
           <S N="published">5/21/2018 3:27:56 AM -05:00</S>
           <S N="created">5/21/2018 3:27:56 AM -05:00</S>
-          <S N="lastUpdated">12/29/2022 9:11:50 PM -06:00</S>
+          <S N="lastUpdated">12/29/2022 11:31:52 PM -06:00</S>
           <S N="tags">PSModule PSFunction_Find-Match PSCommand_Find-Match PSFunction_New-FindOptions PSCommand_New-FindOptions PSFunction_New-MatchOptions PSCommand_New-MatchOptions PSFunction_Select-Match PSCommand_Select-Match PSFunction_Get-Endpoint PSCommand_Get-Endpoint PSFunction_Get-SecureFileTicket PSCommand_Get-SecureFileTicket PSFunction_Get-SecureFileName PSCommand_Get-SecureFileName PSFunction_Get-Input PSCommand_Get-Input PSFunction_Get-TaskVariable PSCommand_Get-TaskVariable PSFunction_Get-TaskVariableInfo PSCommand_Get-TaskVariableInfo PSFunction_Set-TaskVariable PSCommand_Set-TaskVariable PSFunction_Find-Files PSCommand_Find-Files PSFunction_Get-LocString PSCommand_Get-LocString PSFunction_Import-LocStrings PSCommand_Import-LocStrings PSFunction_Write-AddAttachment PSCommand_Write-AddAttachment PSFunction_Write-AddBuildTag PSCommand_Write-AddBuildTag PSFunction_Write-AssociateArtifact PSCommand_Write-AssociateArtifact PSFunction_Write-LogDetail PSCommand_Write-LogDetail PSFunction_Write-PrependPath PSCommand_Write-PrependPath PSFunction_Write-SetEndpoint PSCommand_Write-SetEndpoint PSFunction_Write-SetProgress PSCommand_Write-SetProgress PSFunction_Write-SetResult PSCommand_Write-SetResult PSFunction_Write-SetSecret PSCommand_Write-SetSecret PSFunction_Write-SetVariable PSCommand_Write-SetVariable PSFunction_Write-TaskDebug PSCommand_Write-TaskDebug PSFunction_Write-TaskError PSCommand_Write-TaskError PSFunction_Write-TaskVerbose PSCommand_Write-TaskVerbose PSFunction_Write-TaskWarning PSCommand_Write-TaskWarning PSFunction_Write-UpdateBuildNumber PSCommand_Write-UpdateBuildNumber PSFunction_Write-UpdateReleaseName PSCommand_Write-UpdateReleaseName PSFunction_Write-UploadArtifact PSCommand_Write-UploadArtifact PSFunction_Write-UploadBuildLog PSCommand_Write-UploadBuildLog PSFunction_Write-UploadFile PSCommand_Write-UploadFile PSFunction_Write-UploadSummary PSCommand_Write-UploadSummary PSFunction_Out-Default PSCommand_Out-Default PSFunction_Get-AssemblyReference PSCommand_Get-AssemblyReference PSFunction_Get-TfsClientCredentials PSCommand_Get-TfsClientCredentials PSFunction_Get-TfsService PSCommand_Get-TfsService PSFunction_Get-VssCredentials PSCommand_Get-VssCredentials PSFunction_Get-VssHttpClient PSCommand_Get-VssHttpClient PSFunction_Assert-Agent PSCommand_Assert-Agent PSFunction_Assert-Path PSCommand_Assert-Path PSFunction_Invoke-Tool PSCommand_Invoke-Tool PSFunction_Trace-EnteringInvocation PSCommand_Trace-EnteringInvocation PSFunction_Trace-LeavingInvocation PSCommand_Trace-LeavingInvocation PSFunction_Trace-Path PSCommand_Trace-Path PSFunction_Get-WebProxy PSCommand_Get-WebProxy PSFunction_Get-ClientCertificate PSCommand_Get-ClientCertificate PSIncludes_Function</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2022-12-29T21:11:50Z</S>
+          <S N="updated">2022-12-29T23:31:52Z</S>
           <S N="NormalizedVersion">0.11.0</S>
           <S N="Authors">Microsoft</S>
           <S N="IsPrerelease">false</S>
@@ -207,7 +207,7 @@
           <S N="CompanyName">Microsoft</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">D:\CODE\Organizations\PoshAdoTasks\ado-taskname\adotaskname\ps_modules\VstsTaskSdk\0.11.0</S>
+      <S N="InstalledLocation">D:\CODE\Organizations\PoshAdoTasks\ado-installmodule\adoinstallmodule\ps_modules\VstsTaskSdk\0.11.0</S>
     </MS>
   </Obj>
 </Objs>

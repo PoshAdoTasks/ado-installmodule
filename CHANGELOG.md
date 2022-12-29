@@ -5,6 +5,19 @@ All changes to this module should be reflected in this document.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [[1.2.0]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.2.0) - 2022-12-29
+
+This update includes a fix for the file not found error, the VstsTaskSdk Module needs to be one level below the task. When you perform the Save-Module command it creates a versioned folder below the VstsTaskSdk folder and all the PowerShell goes there.
+
+The following changes have been applied:
+
+- psakefile.ps1
+  - Updated the task to move the files up one level
+- ps_modules
+  - Moved the module files up one level
+
+--
+
 ## [[1.1.0]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.1.0) - 2022-12-29
 
 This update includes a fix for the file not found error as well as a UI update for Scope

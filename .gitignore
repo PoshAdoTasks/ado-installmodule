@@ -11,6 +11,7 @@
 *.sln.docstates
 *.vsix
 output/
+ps_modules/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

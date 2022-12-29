@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
-    "id": "adotaskname",
-    "name": "ADO TaskName",
+    "id": "adoinstallmodule",
+    "name": "ADO Install Module",
     "version": "1.0.0",
     "publisher": "pattontech",
     "targets": [
@@ -9,27 +9,27 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "description": "A task that generates a password for the pipeline",
+    "description": "An Azure DevOps PowerShell Task to install a module",
     "categories": [
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "adotaskname/icon.png"
+        "default": "adoinstallmodule/icon.png"
     },
     "files": [
         {
-            "path": "adotaskname"
+            "path": "adoinstallmodule"
         }
     ],
     "contributions": [
         {
-            "id": "adotaskname",
+            "id": "adoinstallmodule",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "adotaskname"
+                "name": "adoinstallmodule"
             }
         }
     ]

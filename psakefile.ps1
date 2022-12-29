@@ -1,6 +1,6 @@
 $script:WorkingDir = $PSScriptRoot;
-$script:TaskName = 'adotaskname'
-$script:Description = 'This task generates a complex password'
+$script:TaskName = 'adoinstallmodule'
+$script:Description = 'An Azure DevOps PowerShell Task to install a module'
 $script:Author = 'Jeffrey S. Patton'
 
 Task clean {

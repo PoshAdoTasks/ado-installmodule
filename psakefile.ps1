@@ -28,7 +28,7 @@ Task AddVstsTaskSdk -depends SetupTfx {
  $VersionDirectory = (Get-Item .).GetDirectories().FullName;
  Write-Output $VstsTaskSdkDirectory
  Write-Output $VersionDirectory
- Move-Item $VersionDirectory $VstsTaskSdkDirectory -Verbose
+ Move-Item "$($VersionDirectory)\*" $VstsTaskSdkDirectory -Verbose
 }
 
 Task CreatePackage -depends Clean {

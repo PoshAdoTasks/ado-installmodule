@@ -5,6 +5,17 @@ All changes to this module should be reflected in this document.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [[1.2.2]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.2.2) - 2022-12-29
+
+BUGFIX, when passing in boolean values from ADO, you need to use the -AsBool switch for Get-VstsInput. For future reference there is also a switch for Integers (-AsInt)
+
+The following changes have been applied:
+
+- InstallModule.ps1
+  - Added -AsBool switch for AllowClobber parameter
+
+--
+
 ## [[1.2.1]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.2.1) - 2022-12-29
 
 Minor update, the move was moving the versioned folder, updated the task to move the contents.

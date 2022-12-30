@@ -5,19 +5,28 @@ param()
 [string]$Scope = Get-VstsInput -Name Scope
 [boolean]$AllowClobber = Get-VstsInput -Name AllowClobber -AsBool
 
-$Scopes = @('AllUsers','CurrentUser');
+Write-Verbose "Name          : $Name";
+Write-Verbose "Scope         : $Scope";
+Write-Verbose "AllowClobbber : $AllowClobber";
 
-if (!($Scopes.Contains($Scope)))
-{
- $Scope = 'CurrentUser';
+Trace-VstsEnteringInvocation $MyInvocation;
+
+try {
+ $ErrorActionPreference = 'Stop';
+ $Error.Clear();
+
+ if ($AllowClobber) {
+  Install-Module -Name $Name -Scope $Scope -AllowClobber -Force;
+ }
+ else {
+  Install-Module -Name $Name -Scope $Scope;
+ }
+
+ Write-Host (Get-Command -Module $Name);
 }
-
-if ($AllowClobber)
-{
- Install-Module -Name $Name -Scope $Scope -AllowClobber -Force;
-} else
-{
- Install-Module -Name $Name -Scope $Scope;
+catch {
+ throw $_;
 }
-
-Get-Command -Module $Name;
+finally {
+ Trace-VstsLeavingInvocation $MyInvocation;
+}

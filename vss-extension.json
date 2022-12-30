@@ -17,7 +17,7 @@
   "Azure Pipelines"
  ],
  "icons": {
-  "default": "adoinstallmodule/icon.png"
+  "default": "icon.png"
  },
  "files": [
   {
@@ -27,6 +27,9 @@
  "content": {
   "details": {
    "path": "Overview.md"
+  },
+  "license": {
+    "path": "LICENSE"
   }
  },
  "links": {
@@ -35,6 +38,9 @@
   },
   "license": {
    "uri": "https://github.com/PoshAdoTasks/ado-installmodule/blob/main/LICENSE"
+  },
+  "issues": {
+   "uri": "https://github.com/PoshAdoTasks/ado-installmodule/issues"
   }
  },
  "repository": {

@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [[1.3.0]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.3.0) - 2022-12-30
 
-This update makes the Task public as well as provides some output while it's running.
+This update makes the Task public as well as provides some output while it's running. Making an extension public requires having an overview.md file and an icon.
 
 The following changes have been applied:
 
@@ -21,6 +21,8 @@ The following changes have been applied:
   - Added WriteHost output
   - Added light error handling
 - Overview.md
+  - Added this file
+- icon.png
   - Added this file
 
 --

@@ -24,6 +24,11 @@
    "path": "adoinstallmodule"
   }
  ],
+ "content": {
+  "details": {
+   "path": "Overview.md"
+  }
+ },
  "links": {
   "getstarted": {
    "uri": "https://github.com/PoshAdoTasks/ado-installmodule/blob/main/README.md"

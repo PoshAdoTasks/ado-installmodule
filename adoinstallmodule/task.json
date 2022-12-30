@@ -4,7 +4,7 @@
  "friendlyName": "adoinstallmodule",
  "description": "An Azure DevOps PowerShell Task to install a module",
  "author": "Jeffrey S. Patton",
- "helpMarkDown": "Replace with markdown to show in help",
+ "helpMarkDown": "If you have any issues, please create an issue (https://github.com/PoshAdoTasks/ado-installmodule/issues)",
  "category": "Utility",
  "visibility": [
   "Build",
@@ -14,7 +14,7 @@
  "version": {
   "Major": "1",
   "Minor": "2",
-  "Patch": "2"
+  "Patch": "3"
  },
  "minimumAgentVersion": "1.95.0",
  "instanceNameFormat": "adoinstallmodule $(message)",
@@ -36,15 +36,15 @@
     "CurrentUser": "CurrentUser"
    },
    "defaultValue": "AllUsers",
-   "required": false,
+   "required": true,
    "helpMarkDown": "The scope of the module"
   },
   {
    "name": "AllowClobber",
    "type": "boolean",
    "label": "Can module overwrite",
-   "defaultValue": "true",
-   "required": false,
+   "defaultValue": true,
+   "required": true,
    "helpMarkDown": "Forces this modules versioning"
   }
  ],

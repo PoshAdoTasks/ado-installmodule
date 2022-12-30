@@ -20,6 +20,8 @@ The following changes have been applied:
   - Added WriteVerbose output
   - Added WriteHost output
   - Added light error handling
+- Overview.md
+  - Added this file
 
 --
 

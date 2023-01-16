@@ -6,6 +6,19 @@ $script:Author = 'Jeffrey S. Patton'
 $script:GithubUrl = "https://github.com/PoshAdoTasks/$($script:GithubRepo)"
 $script:MarketplaceUrl = "https://marketplace.visualstudio.com/items?itemName=pattontech.$($script:TaskName)"
 
+if (Get-Module -ListAvailable | Where-Object -Property Name -eq 'PoshAdoTask') {
+ if (!(Get-Module PoshAdoTask)) {
+  Import-Module PoshAdoTask -Force;
+ }
+}
+else {
+ Install-Module PoshAdoTask -Scope CurrentUser -AllowClobber -Force
+ Import-Module PoshAdoTask -Force;
+}
+
+Import-Module BuildHelpers;
+Import-Module psake;
+
 Task CreateAdoTask -depends Clean, AddVstsTaskSdk
 
 Task clean {

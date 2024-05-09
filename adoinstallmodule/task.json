@@ -14,7 +14,7 @@
  "version": {
   "Major": "1",
   "Minor": "3",
-  "Patch": "0"
+  "Patch": "1"
  },
  "minimumAgentVersion": "1.95.0",
  "instanceNameFormat": "adoinstallmodule $(message)",
@@ -40,6 +40,14 @@
    "helpMarkDown": "The scope of the module"
   },
   {
+    "name": "Version",
+    "type": "string",
+    "label": "Module Version",
+    "defaultValue": "",
+    "required": true,
+    "helpMarkDown": "The version of the module to install"
+   },
+   {
    "name": "AllowClobber",
    "type": "boolean",
    "label": "Can module overwrite",

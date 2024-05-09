@@ -5,6 +5,17 @@ All changes to this module should be reflected in this document.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [[1.3.1]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.3.1) - 2024-05-09
+
+This is a minor and much needed update to allow a version to be passed into the task.
+
+The following changes have been applied:
+
+- InstallModule.ps1
+  - Added Version parameter
+
+--
+
 ## [[1.3.0]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.3.0) - 2022-12-30
 
 This update makes the Task public as well as provides some output while it's running. Making an extension public requires having an overview.md file and an icon.

@@ -5,6 +5,30 @@ All changes to this module should be reflected in this document.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [[1.3.2]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.3.2) - 2024-07-05
+
+This version adds some additional checks and verbose output to validate that the version exists in the Gallery.
+
+1. **Check if the module is already installed and matches the required version:**
+   - Added a check to see if the module is installed.
+   - If installed, compare the installed version with the required version.
+   - Skip the installation if the installed version matches the required version.
+
+2. **Verbose logging for installed module status:**
+   - Log a message if the module is already installed with the required version.
+   - Log a message if the module is installed but the version does not match the required version.
+   - Log a message if the module is not installed.
+
+3. **Check if the specified version is available:**
+   - Ensure the specified version is available in the repository before attempting to install it.
+   - Throw an error if the specified version is not available.
+
+4. **Install the module only if the required version is not already installed:**
+   - Proceed with the installation if the required version is not already installed.
+   - Verify the installation and log the installed version.
+
+--
+
 ## [[1.3.1]](https://github.com/PoshAdoTasks/ado-installmodule/releases/tag/v1.3.1) - 2024-05-09
 
 This is a minor and much needed update to allow a version to be passed into the task.
